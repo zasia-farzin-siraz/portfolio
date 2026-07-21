@@ -4,8 +4,8 @@ export const projects = [
     description:
       "A community support platform where users can share resources, request help, volunteer, and connect with their local community.",
     tech: ["React", "Flask", "SQLite", "Tailwind CSS"],
-    github: "https://github.com/zasiaf/LifeLine",
-    demo: "",
+    github: "https://github.com/Pranto-Roy-10/LifeLine",
+    demo: "https://lifeline-rlf3.onrender.com/",
     image: "/projects/lifeline.png",
   },
   {
