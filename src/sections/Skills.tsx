@@ -72,14 +72,9 @@ function Skills() {
           transition={{ duration: .7 }}
           viewport={{ once: true }}
         >
-
-          <p className="mb-4 text-center text-lg font-semibold uppercase tracking-[6px] text-[#D79AB7]">
-            Things I Build With
-          </p>
-
-          <h2 className="pixel-title mb-20 text-center text-[#49355A]">
-            Skills
-          </h2>
+        <h2 className="pixel-title mb-20 text-center text-[#49355A]">
+          Things I Build With
+        </h2>
 
           {/* Terminal */}
 

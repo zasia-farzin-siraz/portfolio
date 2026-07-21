@@ -48,12 +48,9 @@ function Contact() {
 
       <Container>
 
-        <p className="mb-4 text-center text-lg font-semibold uppercase tracking-[6px] text-[#D79AB7]">
-          Get In Touch
-        </p>
 
         <h2 className="pixel-title mb-20 text-center text-[#49355A]">
-          Let's Connect
+          Get In Touch
         </h2>
 
         <div className="grid gap-12 lg:grid-cols-2">

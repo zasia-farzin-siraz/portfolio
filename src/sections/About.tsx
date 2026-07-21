@@ -44,14 +44,9 @@ function About() {
           transition={{ duration: .8 }}
           viewport={{ once: true }}
         >
-
-          <p className="mb-4 text-center text-lg font-semibold uppercase tracking-[6px] text-[#D79AB7]">
-            Get To Know Me
-          </p>
-
-          <h2 className="pixel-title mb-20 text-center text-[#49355A]">
-            About Me
-          </h2>
+        <h2 className="pixel-title mb-20 text-center text-[#49355A]">
+          Get To Know Me
+        </h2>
 
           <div className="grid items-center gap-14 lg:grid-cols-2">
 

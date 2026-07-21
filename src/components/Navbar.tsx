@@ -75,7 +75,7 @@ function Navbar() {
 
           <div className="hidden md:block">
 
-            <Button href="/zasia_farzin_siraz_cv.pdf">
+            <Button href="#contact">
               Hire Me
             </Button>
 
@@ -127,7 +127,7 @@ function Navbar() {
 
               ))}
 
-              <Button href="/zasia_farzin_siraz_cv.pdf">
+              <Button href="#contact">
                 Hire Me
               </Button>
 

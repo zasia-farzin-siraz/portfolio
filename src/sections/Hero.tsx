@@ -73,41 +73,45 @@ function Hero() {
 
   {/* Badge */}
 
-  <div
-    className="
-    inline-flex
-    items-center
-    gap-3
-    border-4
-    border-[#BCA7DB]
-    bg-[#F8DDE3]
-    px-6
-    py-3
-    shadow-[6px_6px_0_#BCA7DB]
-    mb-10
-    mb-10
-    "
-  >
+<motion.div
+  animate={{
+  y: [0, -14, 0],
+  
+}}
+
+transition={{
+  duration: 1.6,
+  repeat: Infinity,
+  ease: "easeInOut",
+}}
+  className="
+  inline-flex
+  items-center
+  gap-3
+  border-4
+  border-[#BCA7DB]
+  bg-[#F8DDE3]
+  px-6
+  py-3
+  shadow-[6px_6px_0_#BCA7DB]
+  mb-10
+  "
+>
     <div className="h-3 w-3 bg-[#D79AB7]" />
     <span className="text-[#5A476A] font-semibold">
       Available for Work
     </span>
-  </div>
+  </motion.div>
 
   {/* Heading */}
 
 <h1
 className="
 pixel-title
-
-leading-[0.95]
-
-text-[68px]
-
-md:text-[96px]
-
+leading-none
+text-5xl
+lg:text-6xl
 tracking-tight
-
 text-[#49355A]
 "
 >
@@ -174,7 +178,7 @@ text-[#49355A]
 
   {/* Buttons */}
 
-  <div className="mt-10 flex gap-5">
+  <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
     <Button href="#projects">
       View Projects
