@@ -4,7 +4,7 @@ A modern, responsive developer portfolio built with **React**, **TypeScript**, *
 
 ## 🌐 Live Demo
 
-🔗 https://YOUR-VERCEL-LINK.vercel.app
+🔗 https://portfolio-9k44.vercel.app/
 
 ---
 
