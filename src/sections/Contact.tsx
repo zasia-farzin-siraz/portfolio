@@ -1,51 +1,178 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+
 import Container from "../components/Container";
+import { personal } from "../constants/personal";
+
+const cards = [
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    value: personal.email,
+    href: `mailto:${personal.email}`,
+  },
+
+  {
+    icon: <FaGithub />,
+    title: "GitHub",
+    value: "zasia-farzin-siraz",
+    href: personal.github,
+  },
+
+  {
+    icon: <FaLinkedin />,
+    title: "LinkedIn",
+    value: "Connect with me",
+    href: personal.linkedin,
+  },
+
+  {
+    icon: <FaMapMarkerAlt />,
+    title: "Location",
+    value: personal.location,
+  },
+];
 
 function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#050505] py-28"
+      className="relative overflow-hidden bg-[#FFF7F5] py-32"
     >
+      <div className="absolute left-0 top-10 h-72 w-72 rounded-full bg-pink-200/40 blur-3xl" />
+      <div className="absolute right-0 bottom-10 h-80 w-80 rounded-full bg-violet-200/40 blur-3xl" />
+
       <Container>
 
-        <h2 className="mb-6 text-center text-4xl font-bold text-[#D66BFF]">
+        <p className="mb-4 text-center text-lg font-semibold uppercase tracking-[6px] text-[#D79AB7]">
+          Get In Touch
+        </p>
+
+        <h2 className="pixel-title mb-20 text-center text-[#49355A]">
           Let's Connect
         </h2>
 
-        <p className="mb-12 text-center text-gray-400">
-          Feel free to reach out through any of these platforms.
-        </p>
+        <div className="grid gap-12 lg:grid-cols-2">
 
-        <div className="flex justify-center gap-8">
+          {/* Left */}
 
-          {/* Email */}
-          <a
-            href="mailto:YOUR_EMAIL@gmail.com"
-            className="text-[#D66BFF] text-4xl transition-all duration-300 hover:scale-125 hover:drop-shadow-[0_0_20px_#B026FF]"
-          >
-            <FaEnvelope />
-          </a>
+          <div>
 
-          {/* GitHub */}
-          <a
-            href="https://github.com/zasia-farzin-siraz"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[#D66BFF] text-4xl transition-all duration-300 hover:scale-125 hover:drop-shadow-[0_0_20px_#B026FF]"
-          >
-            <FaGithub />
-          </a>
+            <h3 className="mb-8 text-4xl font-bold text-[#49355A]">
+              Let's build something amazing together.
+            </h3>
 
-          {/* LinkedIn */}
-          <a
-            href="YOUR_LINKEDIN_LINK"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[#D66BFF] text-4xl transition-all duration-300 hover:scale-125 hover:drop-shadow-[0_0_20px_#B026FF]"
-          >
-            <FaLinkedin />
-          </a>
+            <p className="mb-10 text-lg leading-9 text-[#655874]">
+              I'm always interested in discussing software
+              engineering, AI & Machine Learning, web
+              development, internships, graduate roles,
+              or exciting collaboration opportunities.
+            </p>
+
+            <a
+              href={`mailto:${personal.email}`}
+              className="
+              inline-block
+
+              border-4
+
+              border-[#BCA7DB]
+
+              bg-[#F8DDE3]
+
+              px-8
+
+              py-4
+
+              font-bold
+
+              text-[#49355A]
+
+              shadow-[6px_6px_0_#BCA7DB]
+
+              transition-all
+
+              hover:-translate-y-1
+              "
+            >
+              Send Email ✉
+            </a>
+
+          </div>
+
+          {/* Right */}
+
+          <div className="grid gap-6">
+
+            {cards.map((card) => {
+
+              const content = (
+                <div
+                  className="
+                  flex
+
+                  items-center
+
+                  gap-5
+
+                  border-4
+
+                  border-[#BCA7DB]
+
+                  bg-white
+
+                  p-6
+
+                  shadow-[6px_6px_0_#BCA7DB]
+
+                  transition-all
+
+                  duration-300
+
+                  hover:-translate-y-1
+                  "
+                >
+                  <div className="text-3xl text-[#D79AB7]">
+                    {card.icon}
+                  </div>
+
+                  <div>
+                    <h4 className="font-bold text-[#49355A]">
+                      {card.title}
+                    </h4>
+
+                    <p className="text-[#655874]">
+                      {card.value}
+                    </p>
+                  </div>
+                </div>
+              );
+
+              if (card.href) {
+                return (
+                  <a
+                    key={card.title}
+                    href={card.href}
+                    target={card.href.startsWith("http") ? "_blank" : undefined}
+                    rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
+                    {content}
+                  </a>
+                );
+              }
+
+              return (
+                <div key={card.title}>
+                  {content}
+                </div>
+              );
+            })}
+
+          </div>
 
         </div>
 

@@ -1,0 +1,21 @@
+:root{
+
+--bg:#0F0B16;
+--surface:#17121F;
+--surface2:#221A2E;
+
+--white:#FFF7F7;
+
+--primary:#F5CBCB;
+--secondary:#FFE2E2;
+--accent:#C5B3D3;
+
+--text:#FFF8F8;
+--muted:#CDB9D7;
+
+--shadow-pink:0 0 25px rgba(245,203,203,.35);
+--shadow-purple:0 0 30px rgba(197,179,211,.35);
+
+--radius:22px;
+
+}

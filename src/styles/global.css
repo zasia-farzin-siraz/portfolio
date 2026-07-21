@@ -1,0 +1,41 @@
+body{
+
+background:#FDF7F8;
+
+color:#4A3A5A;
+
+font-family:Inter,sans-serif;
+
+overflow-x:hidden;
+
+}
+
+.pixel-title{
+
+font-family:"Press Start 2P",cursive;
+
+}
+
+.pixel-shadow{
+
+box-shadow:8px 8px 0 #BCA7DB;
+
+}
+
+.pixel-card{
+
+border:4px solid #CDBDE8;
+
+background:#FFF6F8;
+
+box-shadow:8px 8px 0 #BCA7DB;
+
+}
+
+.section{
+
+padding-top:120px;
+
+padding-bottom:120px;
+
+}
