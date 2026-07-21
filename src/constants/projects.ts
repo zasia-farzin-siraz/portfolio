@@ -72,7 +72,7 @@ export const projects = [
     "https://github.com/zasia-farzin-siraz/portfolio",
 
   demo:
-    "https://YOUR-PORTFOLIO-LINK.vercel.app",
+    "https://portfolio-9k44.vercel.app/",
 
   tech: [
     "React",
