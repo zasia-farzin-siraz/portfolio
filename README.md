@@ -1,32 +1,149 @@
-# React + TypeScript + Vite
+# 🌸 Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive developer portfolio built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion** to showcase my projects, technical skills, and experience in Artificial Intelligence, Machine Learning, and Full Stack Development.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://YOUR-VERCEL-LINK.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+- 🌸 Pastel pixel-inspired UI
+- 🎮 Custom pixel cursor
+- ✨ Animated pixel stars
+- 🎞️ Smooth page transitions with Framer Motion
+- 📱 Fully responsive design
+- 📂 Interactive project showcase
+- ⬆️ Back-to-top button
+- ⏳ Pixel loading screen
+- 💼 Resume download
+- 📧 Contact section with GitHub & LinkedIn
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 📸 Preview
+
+> Add screenshots inside `/public/projects/`
+
+### Home
+
+![Home](public/projects/portfolio-home.png)
+
+### Projects
+
+![Projects](public/projects/portfolio-projects.png)
+
+---
+
+## 🚀 Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Libraries
+
+- React Icons
+- React Type Animation
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📁 Project Structure
+
+```
+portfolio/
+│
+├── public/
+│   ├── projects/
+│   ├── profile.JPG
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   ├── sections/
+│   ├── constants/
+│   ├── assets/
+│   └── App.tsx
+│
+├── package.json
+└── README.md
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🖥️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/zasia-farzin-siraz/portfolio.git
+```
+
+Go into the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
+
+```bash
+npm run dev
+```
+
+Open
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🎯 Featured Projects
+
+- ❤️ LifeLine – Neighborhood Help & Emergency Network
+- 🧠 ICU Mortality Risk Prediction
+- 🎬 Sentiment Analysis Dashboard
+- 🚗 Ford Car Price Prediction
+- 🌸 Developer Portfolio
+
+---
+
+## 📫 Connect With Me
+
+**Zasia Farzin Siraz**
+
+📧 Email:
+zasia.f20@gmail.com
+
+💼 LinkedIn:
+https://www.linkedin.com/in/zasia-siraz
+
+🐙 GitHub:
+https://github.com/zasia-farzin-siraz
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+⭐ If you enjoyed this project, consider giving it a star!
